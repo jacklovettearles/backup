@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Whack A Mole!</title>
+    <!--    Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Mukta+Malar" rel="stylesheet">
+    <!--    Bootstrap CDN-->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <!--    My Stylesheet-->
+    <link href='myCSS.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="whole">
+        <!--        Score Counter-->
+        <h1>Whack-a-mole! <span id="scoreTop" class="score">0</span></h1>
+
+        <div class="row">
+
+            <div class="col-md-3 gameOptions">
+                <!--        difficulty levels and Start Button-->
+                <button id="startA" class="startGame btn disabled">Start Game!</button>
+                <div class="levelButtonsC">
+                    <button id="easy" class="levels ">Easy</button>
+                    <button id="medium" class="levels">Medium</button>
+                    <button id="hard" class="levels">Hard</button>
+                </div>
+
+
+                <!--  <button id="startB" class="startGame myScore" onClick="scoreGame()">Show Score!</button>-->
+
+                <!--        Displays higher of lower than pervious score plus message-->
+                <span id="hS" class="scoreC"></span>
+                <span id="lS" class="scoreC"></span>
+                <span class="buttonbox"></span>
+                <!--        Clear Score Button-->
+                <button id="reset1" class="startGame myScore">Clear Score</button>
+            </div>
+            <!--        How to play game message pop up-->
+            <div id="messages" class="col-md-5 messageC alertMessages">
+                <p>You have 30 seconds to whack as many moles as possible!</p>
+                <p>First select a difficulty level then when you’re ready press start game then scroll down to mole mountain</p>
+                <p>If you want to try to beat your previous score, simply press Start Game to play again. <br>Good luck!</p>
+
+                <button id="closeMessages" class="btn primary">Close</button>
+            </div>
+
+            <div class="col-md-2 col-md-offset-1 leaderBoard"></div>
+
+        </div>
+        <!--        Holes the moles pop out of-->
+        <div class="game">
+            <div class="hole hole1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mole"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="myJs.js"></script>
+
+
+</body>
+
+</html>
